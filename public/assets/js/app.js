@@ -21,6 +21,8 @@ const observer = new IntersectionObserver(function(entries) {
 entries.forEach(entry => {
 if (entry.isIntersecting) {
 entry.target.classList.add('animate-in');
+entry.target.style.opacity = '1';
+entry.target.style.transform = 'translateY(0)';
 // Stagger animation for multiple items
 const siblings = entry.target.parentElement.children;
 Array.from(siblings).forEach((sibling, index) => {
