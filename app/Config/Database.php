@@ -6,12 +6,8 @@ use CodeIgniter\Database\Config;
 
 class Database extends Config
 {
-    /**
-     * Default database group.
-     *
-     * Render supplies DATABASE_URL when the web service is connected to the
-     * Render Postgres database created by render.yaml.
-     */
+    public string $defaultGroup = 'default';
+    
     public array $default = [
         'DSN'      => '',
         'hostname' => '127.0.0.1',
