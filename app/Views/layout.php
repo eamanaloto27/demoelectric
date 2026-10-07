@@ -286,8 +286,6 @@ behavior: 'smooth'
 });
 });
 // Add animation on scroll
-Electric Company CMV
-PREPARED BY : JOHN BENEDIC R. ENRIQUEZ
 const observerOptions = {
 threshold: 0.1,
 rootMargin: '0px 0px -50px 0px'
